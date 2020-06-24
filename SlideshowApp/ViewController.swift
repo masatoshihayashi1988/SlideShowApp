@@ -110,6 +110,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        startStop.setTitle("再生/停止", for: .normal)
+        
     }
     
     @objc func autoPlay(_ timer: Timer) {
@@ -121,6 +123,7 @@ class ViewController: UIViewController {
         } else {
             displayImageNo = 0
             displayImage()
+            
         }
     }
 
